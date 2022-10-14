@@ -1,0 +1,18 @@
+body {
+    background: #373737;
+    margin: 0;
+}
+
+:root {
+    --window-primary: #a2866e;
+
+    --hover-shader: rgb(100, 100, 100, 0.5);
+    --hover-intense: rgb(50, 50, 50, 0.5);
+
+    --font-enlarged: 22px;
+    --font-regular: 18px;
+    --font-reduced: 16px;
+    --font-color: white;
+
+    --side-margin: 40px;
+}
