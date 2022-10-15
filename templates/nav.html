@@ -26,4 +26,73 @@
             </div>
         </div>
     </div>
+    <div class="frame-top">
+        <div id="closed-user-menu" class="user-positional">
+            <div class="user-black" onclick="user('k')">
+                <div class="user-left">
+                    <div style="font-weight: bolder;">Mareks Niks Atars</div>
+                    <div>Registered user</div>
+                    <div style="display: none;" id="user-plane" class="menu-elements">
+                        <div class="menu-element">Profile</div>
+                        <div class="menu-element">Log out</div>
+                    </div>
+                </div>
+                <div class="user-right">
+                    <img class="img-1" src="{{ url_for('static', filename='media/arrow-down.png') }}">
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="opened-user-menu" class="user-positional">
+            <div class="user-blackk" onclick="user('kk')">
+                <div class="user-left">
+                    <div style="font-weight: bolder;">Mareks Niks Atars</div>
+                    <div>Registered user</div>
+                    <div class="menu-elements">
+                        <div class="menu-element">Profile</div>
+                        <div class="menu-element">Log out</div>
+                    </div>
+                </div>
+                <div class="user-right">
+                    <img class="img-11" src="{{ url_for('static', filename='media/cross.png') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div  id="user-plane" class="user-option">-->
+<!--        <div onclick="user('none')" style="position: absolute; display: flex; justify-content: center; width: 100%; height: 90vh;">-->
+<!--            <div class="menu-elements">-->
+<!--                <div class="menu-element">Profile</div>-->
+<!--                <div class="menu-element">Log out</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="frame-bottom">
+        <div class="container">
+            <div class="holder">
+                <img onclick="menu('flex')" class="burger" src="{{ url_for('static', filename='media/burger.png') }}">
+            </div>
+            <div class="page-title">
+                Warehouse
+            </div>
+        </div>
+    </div>
+    <div id="navigation-plane" class="left-navigation">
+        <div class="left-part">
+            <div class="page-title">
+                Menu
+            </div>
+            <div class="nav-elements">
+                <div class="nav-element">Sources</div>
+                <div class="nav-element">Import</div>
+                <div class="nav-element">Warehouse</div>
+                <div class="nav-element">Clients</div>
+                <div class="nav-element">Export</div>
+                <div class="nav-element">Expenses</div>
+                <div class="nav-element">Settings</div>
+            </div>
+        </div>
+        <div class="right-part" onclick="menu('none')">
+
+        </div>
+    </div>
 </nav>

@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/root.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
     {% block style %} {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 {% include 'nav.html' %}
 {% block main %} {% endblock %}
 </body>
+<script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+{% block script %} {% endblock %}
 </html>

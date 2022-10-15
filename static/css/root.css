@@ -5,8 +5,10 @@ body {
 
 :root {
     --window-primary: #a2866e;
+    --window-secondary: #74604f;
 
     --hover-shader: rgb(100, 100, 100, 0.5);
+    --hover-shader-lower: #827469;
     --hover-intense: rgb(50, 50, 50, 0.5);
 
     --font-enlarged: 22px;
@@ -15,4 +17,5 @@ body {
     --font-color: white;
 
     --side-margin: 40px;
+
 }
