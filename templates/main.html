@@ -9,6 +9,17 @@
 </head>
 <body>
 {% include 'nav.html' %}
-{% block main %} {% endblock %}
+
+    <div class="body">
+
+        <aside>
+            {% block sidebar %} {% endblock %}
+        </aside>
+
+        <div class="main">
+            {% block main %} {% endblock %}
+        </div>
+
+    </div>
 </body>
 </html>
