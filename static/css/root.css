@@ -1,13 +1,20 @@
 @import "table.css";
 
 body {
-    background: #373737;
+    background: var(--body-primary);
     margin: 0;
+    color: var(--font-color);
 }
 
 :root {
     --window-primary: #a2866e;
     --window-secondary: #74604f;
+
+    --body-primary: #373737;
+    --body-secondary: #484848;
+    --body-brighter: #505050;
+
+    --accent-color: #363636;
 
     --hover-shader: rgb(100, 100, 100, 0.5);
     --hover-shader-lower: #827469;
@@ -17,15 +24,23 @@ body {
     --font-regular: 18px;
     --font-reduced: 16px;
     --font-color: white;
+    --font-hover-color: #d7d7d7;
 
     --side-margin: 40px;
 
 }
-
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
 .body {
-    margin: 0;
-    display: flex;
+    margin: 30px auto;
+    width: 95%;
+    background: var(--body-secondary);
+    border-radius: 5px;
 
+    display: flex;
+    justify-content: center;
 }
 
 aside {
@@ -37,6 +52,11 @@ aside {
 }
 
 .main {
-    width: 75%;
-    margin: 0;
+    /*width: calc(75% - 20px);*/
+
+    width: 100%;
+    margin: 25px 10px;
+
+    /*display: flex;*/
+    /*justify-content: center;*/
 }

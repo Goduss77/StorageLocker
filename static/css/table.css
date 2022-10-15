@@ -1,10 +1,27 @@
 table {
     width: 100%;
     border-collapse: collapse;
+
+    margin-top: 10px;
+}
+
+th:nth-child(1), td:nth-child(1){
+    width: 25px;
+    height: 31px;
+    text-align: center;
+}
+
+th input[type="checkbox"], td input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+td:nth-child(1):hover {
+
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid var(--accent-color);
     padding: 4px;
 }
 
@@ -15,4 +32,59 @@ th {
 
 td {
     color: #c9c9d2;
+}
+
+
+.table-navigation {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--body-brighter);
+    box-sizing: border-box;
+    border-bottom: var(--accent-color);
+}
+
+.table-navigation .left {
+    display: flex;
+}
+
+.table-navigation .right {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.button:hover {
+    color: var(--font-hover-color);
+}
+
+.button .icon {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    filter: invert(100%);
+    margin-right: 5px;
+}
+
+.icon.plus {
+    background-image: url("../media/plus.svg");
+}
+.icon.filter {
+    background-image: url("../media/filter.svg");
+}
+.icon.remove {
+    background-image: url("../media/trash.svg");
+}
+.icon.pencil {
+    background-image: url("../media/pencil.svg");
 }

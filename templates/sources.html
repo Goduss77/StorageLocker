@@ -8,24 +8,49 @@
 
 {% block main %}
 <div class="">
+    <div class="table-navigation">
+        <div class="left">
+            <a href="#" class="button">
+                <div class="icon filter"></div>
+                <div class="content">Add filter</div>
+            </a>
+        </div>
+
+        <div class="right">
+            <a href="#" class="button selectable" style="display: none">
+                <div class="icon pencil"></div>
+                <div class="content">Edit selected items</div>
+            </a>
+
+            <a href="#" class="button selectable" style="display: none">
+                <div class="icon remove"></div>
+                <div class="content">Delete selected items</div>
+            </a>
+
+            <a href="#" class="button">
+                <div class="icon plus"></div>
+                <div class="content">Add record</div>
+            </a>
+        </div>
+    </div>
     <table>
         <tr>
-            <th>Id</th>
+            <th><input type="checkbox" id="main-checkbox" onchange="selectAll()"></th>
             <th>Name</th>
             <th>Number</th>
         </tr>
-        <tr>
-            <td>1.</td>
+        <tr id="1">
+            <td onmouseenter="hoveringId(this)" onmouseleave="endHovering(this)">1</td>
             <td>Lamda Relogi</td>
             <td>32</td>
         </tr>
-        <tr>
-            <td>2.</td>
+        <tr id="2">
+            <td onmouseenter="hoveringId(this)" onmouseleave="endHovering(this)">2</td>
             <td>Zibino Lambap</td>
             <td>9</td>
         </tr>
-        <tr>
-            <td>3.</td>
+        <tr id="3">
+            <td onmouseenter="hoveringId(this)" onmouseleave="endHovering(this)">3</td>
             <td>Bobin Karagugin</td>
             <td>58</td>
         </tr>
@@ -33,4 +58,8 @@
 </div>
 
 
+{% endblock %}
+
+{% block script %}
+    <script src="{{ url_for('static', filename='js/table.js') }}"></script>
 {% endblock %}
